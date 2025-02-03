@@ -51,7 +51,7 @@ const adivinanza = () => {
 } */
 
 
-const respuesta    = prompt('Ingrese el palíndromo');
+/* const respuesta    = prompt('Ingrese el palíndromo');
 const respuestaMin = respuesta.toLocaleLowerCase();
 const respuestaEsp = respuestaMin.replace(/[\s\p{P}]/gu, '');
 const respuestaInv = respuestaEsp.split('').reverse().join('');
@@ -63,3 +63,5 @@ const analizando = () => {
         alert('No es un palíndromo')
     }
 }
+ */
+

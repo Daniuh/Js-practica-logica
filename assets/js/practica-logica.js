@@ -1,22 +1,23 @@
 /* esPar = () => {
     do {
         const respuesta = prompt('Ingresar número, recuerda que para salir del programa solo debes escribir Salir', '0');
-        if( respuesta === 'Salir'){
+        if (respuesta === 'Salir') {
             alert('El programa se ha terminado');
             break;
         }
         const number = Number(respuesta);
-        if(isNaN(number)){
+        if (isNaN(number)) {
             alert('Ingresa un número o explicitamente Salir');
-        }else {
-        if( number % 2 === 0){
-            alert('El número es par');
         } else {
-            alert('El número es impar');
-        }}
+            if (number % 2 === 0) {
+                alert('El número es par');
+            } else {
+                alert('El número es impar');
+            }
+        }
     } while (true);
-} */
-
+}
+ */
 
 /* const number = Math.floor(Math.random() * 100) + 1;
 
@@ -40,7 +41,6 @@ const adivinanza = () => {
 }
  */
 
-
 /* const fizzBuzz = () => {
     for(let i = 1; i < 51; i++){
         (i % 3 === 0 && i % 5 === 0) ? console.log('FizzBuzz')
@@ -49,7 +49,6 @@ const adivinanza = () => {
                       : console.log(i);
     }
 } */
-
 
 /* const respuesta    = prompt('Ingrese el palíndromo');
 const respuestaMin = respuesta.toLocaleLowerCase();

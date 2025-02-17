@@ -1,3 +1,4 @@
+/*
 class Vehiculo  {
     marca  = '';
     modelo = '';
@@ -61,4 +62,4 @@ renault.arrancar();
 
 bmw.info();
 bmw.arrancar();
-
+*/

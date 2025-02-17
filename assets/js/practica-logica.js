@@ -64,3 +64,11 @@ const analizando = () => {
 }
  */
 
+const esCapicua = (number) => {
+    const strNumber = String(number);
+    const invertida = strNumber.split('').reverse().join('');
+    return strNumber === invertida
+}
+
+console.log(esCapicua(123));
+console.log(esCapicua(121));

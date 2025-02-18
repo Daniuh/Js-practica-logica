@@ -64,11 +64,27 @@ const analizando = () => {
 }
  */
 
-const esCapicua = (number) => {
+/* const esCapicua = (number) => {
     const strNumber = String(number);
     const invertida = strNumber.split('').reverse().join('');
     return strNumber === invertida
 }
 
 console.log(esCapicua(123));
-console.log(esCapicua(121));
+console.log(esCapicua(121)); 
+*/
+
+const numeroFaltante = (arr) => {
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i + 1] !== arr[i] + 1) {
+            return arr[i] + 1;
+        }
+    }
+    return null;
+};
+
+// Pruebas
+console.log(numeroFaltante([1, 2, 3, 5]));  // 4
+console.log(numeroFaltante([10, 11, 12, 14, 15])); // 13
+console.log(numeroFaltante([21, 22, 23, 24, 26])); // 25
+console.log(numeroFaltante([100, 101, 102, 103])); // null (ningún número falta)
